@@ -1,0 +1,40 @@
+package unidad3.ejercicio9;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Unidad3.ejercicio9 {
+    public static void main(String[] args) {
+        ArrayList<Integer> number = new ArrayList<>();
+        number.add(96);
+        number.add(2598);
+        number.add(0);
+        number.add(1);
+        number.add(96);
+        number.add(-87);
+        number.add(32);
+	//Mínimo
+        Iterator<Integer> nummin = number.iterator();
+        int min;
+        min = number.get(0); //El primer elemento de la lista sea el mínimo
+        int aux2;
+        while(nummin.hasNext()){
+            aux2 = nummin.next();
+            if (aux2 < min) {
+               min = aux2;
+            }
+        }
+        System.out.println("El menor número de la lista es: " + min);
+  //Maximo
+        Iterator<Integer> nummax = number.iterator();
+        int max;
+        max = number.get(0); //El primer elemento de la lista como el máximo
+        int aux1;
+        while(nummax.hasNext()){
+            aux1 = nummax.next();
+            if (aux1 > max) {
+               max = aux1;
+            }
+        }
+        System.out.println("El mayor número de la lista es: " + max);     
+    }
+}
