@@ -1,9 +1,0 @@
-package POO.E13.u6;
-
-public class POOE13U6 {
-
-    public static void main(String[] args) {
-        Pasajero ventana = new Pasajero();
-        ventana.setVisible(true);
-    }
-}
